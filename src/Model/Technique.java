@@ -5,6 +5,8 @@ public class Technique {
 	private String nameTechine;
 	private String power;
 	
+	private Technique siguiente; 
+	
 	public Technique(String nameTechine, String power) {
 		this.nameTechine = nameTechine;
 		this.power = power;
@@ -25,6 +27,13 @@ public class Technique {
 	public void setPower(String power) {
 		this.power = power;
 	}
+
+	@Override
+	public String toString() {
+		return "Technique [nameTechine=" + nameTechine + ", power=" + power + ", siguiente=" + siguiente + "]";
+	}
+	
+	
 		
 	
 }

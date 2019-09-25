@@ -12,7 +12,7 @@ public class GameCharacter {
 	private GameCharacter siguiente;
 	private GameCharacter anterior;
 	
-	private Technique siguienteT;
+	private Technique primero;	
 	
 	public GameCharacter(String name, String personality, Date dayCreation, String power) {
 		this.name = name;
@@ -52,8 +52,16 @@ public class GameCharacter {
 	public void setDayCreation(Date dayCreation) {
 		this.dayCreation = dayCreation;
 	}
+	
+	@Override
+	public String toString() {
+		return "GameCharacter [name=" + name + ", personality=" + personality + ", dayCreation=" + dayCreation
+				+ ", power=" + power + "]";
+	}
+	
+//	__________________________________________________________________________________________________________________
 
-	public void eliminarTechine(String name) {
+	public void deleterTechine(String name) {
 		
 	}
 	

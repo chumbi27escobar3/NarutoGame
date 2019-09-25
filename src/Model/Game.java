@@ -1,10 +1,13 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class Game {
 
-	private Clan clan;
+	private ArrayList<Clan> clan;
 	
 	
+//	_____________________________________________________________________________________________
 	
 	public void searchClan(String name) {
 		
